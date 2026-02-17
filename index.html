@@ -4,6 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CIS119WR</title>
+  <!-- Setting Color, Border, and Div Sections-->
+  <style>
+    body {
+      background-color: #7a0019;
+      color:antiquewhite;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header,nav,footer {
+      padding: 15px;
+    }
+    .section-box{ 
+      background-color: white;
+      color:black;
+      border: 4px dashed #ffc700;
+      border-radius: 20px;
+      padding: 20px;
+      margin: 30px auto;
+      width: 75%;
+    }
+     ul {
+      list-style-type: none;
+      padding: 0;
+    }
+     li {
+      margin: 10px 0;
+    }
+    a {
+      color: #7A0019;
+      text-decoration: none;
+      font-weight: bold;
+    }
+     a:hover {
+      text-decoration: underline;
+    }
+  </style>
   <link rel="stylesheet" href="styles.css">
   <script src="scripts.js"></script>
 </head>
@@ -11,7 +49,7 @@
   <header>
     <!--repeated top of page info-->
     <h1>Wil Royal</h1>
-    This is my page.
+    This is my CIS119 Repository page.
   </header>
   <nav>
     <!--repeated navigation here, may also move to header-->
@@ -19,11 +57,26 @@
   </nav>
   <main>
     <!--main content goes here-->
-    Main content
+     <div class="section-box"> <!--Labs Section-->
+      <h2>Labs</h2>
+      <ul>
+        <!-- Links open in new tab using target="_blank" -->
+        <li><a href="chapter1.html" target="_blank">Chapter 1 Project</a></li>
+        <li><a href="chapter2.html" target="_blank">Chapter 2 Project</a></li>
+        <li><a href="chapter3.html" target="_blank">Chapter 3 Project</a></li>
+      </ul>
+    </div>
+    <div class="section-box"> <!--Homework Section-->
+      <h2>Homework</h2>
+      <ul>
+        <li><a href="homework1.html" target="_blank">Homework 1</a></li>
+        <li><a href="homework2.html" target="_blank">Homework 2</a></li>
+      </ul>
+    </div> 
   </main>
   <footer>
     <!--repeated bottom of page content goes here-->
-    Footer area
+    © 2026 Wil Royal
   </footer>
 </body>
 </html>
