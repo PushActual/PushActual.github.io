@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>March Madness</title>
+<style>
+body{
+    font-family: Georgia, serif;
+}
+main{
+    display:flex;
+    justify-content:center;
+}
+.container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width:900px;
+    border:2px solid black;
+}
+.section{
+    border:1px solid black;
+    padding:20px;
+    text-align:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.left{
+    font-size:40px;
+    font-weight:bold;
+}
+.calendar{
+    display:grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 2em);
+    gap:4px;
+    text-align:center;
+}
+.calendar div:nth-child(n+17):nth-child(-n+32){
+    background:gold;
+}
+.right h2{
+    margin-bottom:10px;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>March Madness</h1>
+</header>
+<nav>
+</nav>
+<main>
+<div class="container">
+<div class="section left">
+MARCH<br>MADNESS
+</div>
+<div class="section">
+<div>
+<h2>March</h2>
+<div class="calendar">
+<div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+<div></div><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div>
+<div>7</div><div>8</div><div>9</div><div>10</div><div>11</div><div>12</div><div>13</div>
+<div>14</div><div>15</div><div>16</div><div>17</div><div>18</div><div>19</div><div>20</div>
+<div>21</div><div>22</div><div>23</div><div>24</div><div>25</div><div>26</div><div>27</div>
+<div>28</div><div>29</div><div>30</div><div>31</div>
+</div>
+</div>
+</div>
+<div class="section right">
+<div>
+<h2>The Tigers</h2>
+<p>
+Fight for the orange and black,<br>
+Stand strong and never lack,<br>
+Raise the banner high today,<br>
+Victory will lead the way.
+</p>
+</div>
+</div>
+</div>
+</main>
+<footer>
+</footer>
+</body>
+</html>
